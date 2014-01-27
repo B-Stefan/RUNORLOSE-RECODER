@@ -1,0 +1,172 @@
+{
+  "shims": {
+    "/javascripts/app/main.js": {
+      "bootstrap": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "jQuery"
+      },
+      "pusher": {
+        "exports": "Pusher"
+      },
+      "linq": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "Enumerable"
+      },
+      "introJs": {
+        "exports": "introJs"
+      },
+      "lib-chartLegend": {
+        "exports": "legend"
+      },
+      "lib-chart": {
+        "exports": "Chart"
+      }
+    }
+  },
+  "deps": {
+    "/javascripts/app/baseClasses/CoinData.js": [
+      "knockout"
+    ],
+    "/javascripts/app/baseClasses/Player.js": [
+      "knockout",
+      "baseClasses/PositionData",
+      "baseClasses/CoinData"
+    ],
+    "/javascripts/app/baseClasses/PositionData.js": [
+      "knockout",
+      "googlemaps-Marker"
+    ],
+    "/javascripts/app/baseClasses/RealTimeCommunicationChannel.js": [
+      "require",
+      "pusher",
+      "jquery"
+    ],
+    "/javascripts/app/baseClasses/Receiver.js": [
+      "moment",
+      "knockout",
+      "baseClasses/PositionData",
+      "baseClasses/CoinData",
+      "baseClasses/Player",
+      "baseClasses/RealTimeCommunicationChannel",
+      "linq"
+    ],
+    "/javascripts/app/main.js": [
+      "durandal/app",
+      "durandal/viewLocator",
+      "durandal/system"
+    ],
+    "/javascripts/app/viewmodels/board.js": [
+      "baseClasses/Receiver",
+      "knockout",
+      "linq",
+      "durandal/app"
+    ],
+    "/javascripts/app/viewmodels/chart.js": [
+      "knockout",
+      "linq",
+      "moment",
+      "ko-chart",
+      "ko-chartLegend"
+    ],
+    "/javascripts/app/viewmodels/exampleBoard.js": [
+      "viewmodels/board",
+      "text!example.json",
+      "introJs"
+    ],
+    "/javascripts/app/viewmodels/map.js": [
+      "knockout",
+      "linq",
+      "moment",
+      "knockout-google-maps"
+    ],
+    "/javascripts/app/viewmodels/shell.js": [
+      "plugins/router",
+      "durandal/app"
+    ]
+  },
+  "aliases": {
+    "/javascripts/app/main.js": {
+      "text": "../vendor/requirejs-text/text",
+      "knockout": "../vendor/knockout.js/knockout",
+      "jquery": "../vendor/jquery/jquery",
+      "bootstrap": "../vendor/bootstrap/bootstrap",
+      "durandal": "../vendor/durandal",
+      "plugins": "../vendor/durandal/plugins",
+      "transitions": "../vendor/durandal/transitions",
+      "pusher": "../vendor/pusher/pusher",
+      "moment": "../vendor/moment/moment",
+      "knockout-google-maps": "../vendor/knockout.google.maps/dist/knockout.google.maps-0.1.0.debug",
+      "googlemaps-Marker": "../vendor/knockout.google.maps/dist/Marker",
+      "markerclusterer": "../vendor/knockout.google.maps/dist/markerclusterer",
+      "infobubble": "../vendor/knockout.google.maps/dist/infobubble",
+      "linq": "../vendor/linq.js/linq",
+      "introJs": "../vendor/intro.js/intro.min",
+      "ko-chart": "../vendor/knockout.bindings/chart/chart",
+      "ko-chartLegend": "../vendor/knockout.bindings/chart/chartLegend",
+      "lib-chart": "../vendor/knockout.bindings/chart/Chartjs/Chart",
+      "lib-chartLegend": "../vendor/knockout.bindings/chart/ChartJsLegend/src/legend"
+    }
+  },
+  "mappings": {
+    "/javascripts/app/main.js": null
+  },
+  "packages": {
+    "/javascripts/app/main.js": null
+  },
+  "originalConfig": {
+    "shim": {
+      "bootstrap": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "jQuery"
+      },
+      "pusher": {
+        "exports": "Pusher"
+      },
+      "linq": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "Enumerable"
+      },
+      "introJs": {
+        "exports": "introJs"
+      },
+      "lib-chartLegend": {
+        "exports": "legend"
+      },
+      "lib-chart": {
+        "exports": "Chart"
+      }
+    },
+    "paths": {
+      "text": "../vendor/requirejs-text/text",
+      "knockout": "../vendor/knockout.js/knockout",
+      "jquery": "../vendor/jquery/jquery",
+      "bootstrap": "../vendor/bootstrap/bootstrap",
+      "durandal": "../vendor/durandal",
+      "plugins": "../vendor/durandal/plugins",
+      "transitions": "../vendor/durandal/transitions",
+      "pusher": "../vendor/pusher/pusher",
+      "moment": "../vendor/moment/moment",
+      "knockout-google-maps": "../vendor/knockout.google.maps/dist/knockout.google.maps-0.1.0.debug",
+      "googlemaps-Marker": "../vendor/knockout.google.maps/dist/Marker",
+      "markerclusterer": "../vendor/knockout.google.maps/dist/markerclusterer",
+      "infobubble": "../vendor/knockout.google.maps/dist/infobubble",
+      "linq": "../vendor/linq.js/linq",
+      "introJs": "../vendor/intro.js/intro.min",
+      "ko-chart": "../vendor/knockout.bindings/chart/chart",
+      "ko-chartLegend": "../vendor/knockout.bindings/chart/chartLegend",
+      "lib-chart": "../vendor/knockout.bindings/chart/Chartjs/Chart",
+      "lib-chartLegend": "../vendor/knockout.bindings/chart/ChartJsLegend/src/legend"
+    }
+  },
+  "requireFiles": [
+    "/javascripts/app/main.js"
+  ]
+}

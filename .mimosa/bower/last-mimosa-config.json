@@ -1,0 +1,93 @@
+{
+  "watch": true,
+  "bowerDir": {
+    "path": ".mimosa/bower/bower_components",
+    "clean": true,
+    "pathFull": ""
+  },
+  "copy": {
+    "enabled": true,
+    "trackChanges": true,
+    "outRoot": "",
+    "defaultStrategy": "packageRoot",
+    "strategy": {},
+    "forceLatest": true,
+    "exclude": [],
+    "unknownMainFullCopy": false,
+    "overridesArrays": {
+      "knockout.js": [
+        "knockout.js",
+        "knockout-3.0.0.debug.js"
+      ],
+      "bootstrap": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css"
+      ],
+      "font-awesome": [
+        "css/font-awesome.css"
+      ],
+      "intro.js": [
+        "minified/intro.min.js",
+        "minified/introjs.min.css"
+      ],
+      "pusher": [
+        "dist/pusher.js",
+        "dist/pusher.min.js"
+      ],
+      "moment": [
+        "moment.js"
+      ]
+    },
+    "overridesObjects": {
+      "bootstrap": {
+        "dist/fonts": "../../fonts"
+      },
+      "font-awesome": {
+        "fonts": "../../fonts"
+      },
+      "durandal": {
+        "img": "../../images",
+        "js": "durandal",
+        "css": "durandal"
+      }
+    },
+    "mainOverrides": {
+      "knockout.js": [
+        "knockout.js",
+        "knockout-3.0.0.debug.js"
+      ],
+      "bootstrap": [
+        {
+          "dist/fonts": "../../fonts"
+        },
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css"
+      ],
+      "font-awesome": [
+        {
+          "fonts": "../../fonts"
+        },
+        "css/font-awesome.css"
+      ],
+      "durandal": [
+        {
+          "img": "../../images",
+          "js": "durandal",
+          "css": "durandal"
+        }
+      ],
+      "intro.js": [
+        "minified/intro.min.js",
+        "minified/introjs.min.css"
+      ],
+      "pusher": [
+        "dist/pusher.js",
+        "dist/pusher.min.js"
+      ],
+      "moment": [
+        "moment.js"
+      ]
+    },
+    "pathMod": null
+  }
+}

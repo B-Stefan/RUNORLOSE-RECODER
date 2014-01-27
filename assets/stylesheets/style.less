@@ -1,0 +1,55 @@
+.pagination{
+  .active{
+    font-weight: bold;
+  }
+}
+nav {
+  &.navbar-inverse {
+    background-image:url(../images/bg.png)!important;
+    .navbar-brand{
+      font-weight: bolder;
+      color:white;
+    }
+    .navbar-nav{
+      .active{
+        > a{
+          background-color:rgba(220, 220, 220, 0.4)!important;
+        }
+      }
+      > li > a{
+        font-weight: bolder;
+        color: white!important;
+      }
+    }
+  }
+
+}
+
+.recorderBar{
+
+  a {
+    &.disable {
+      color: darkgrey;
+    }
+  }
+  align-content: center;
+  .fa-circle {
+
+    @keyframes blink {
+      0% { color: red; }
+      100% { color: black; }
+    }
+    @-webkit-keyframes blink {
+      0% { color: red; }
+      100% { color: black; }
+    }
+    &.blink {
+      -webkit-animation: blink 1s linear infinite;
+      -moz-animation: blink 1s linear infinite;
+      animation: blink 1s linear infinite;
+    }
+  }
+  .fa {
+    padding: 10px;
+  }
+}

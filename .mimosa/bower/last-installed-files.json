@@ -1,0 +1,19 @@
+[
+  "assets\\fonts\\FontAwesome.otf",
+  "assets\\fonts\\fontawesome-webfont.eot",
+  "assets\\fonts\\fontawesome-webfont.svg",
+  "assets\\fonts\\fontawesome-webfont.ttf",
+  "assets\\fonts\\fontawesome-webfont.woff",
+  "assets\\javascripts\\vendor\\jquery\\jquery.js",
+  "assets\\javascripts\\vendor\\pusher\\pusher.js",
+  "assets\\javascripts\\vendor\\moment\\moment.js",
+  "assets\\javascripts\\vendor\\pusher\\pusher.min.js",
+  "assets\\javascripts\\vendor\\requirejs\\require.js",
+  "assets\\javascripts\\vendor\\intro.js\\intro.min.js",
+  "assets\\javascripts\\vendor\\requirejs-text\\text.js",
+  "assets\\javascripts\\vendor\\bootstrap\\bootstrap.js",
+  "assets\\javascripts\\vendor\\knockout.js\\knockout.js",
+  "assets\\stylesheets\\vendor\\bootstrap\\bootstrap.css",
+  "assets\\stylesheets\\vendor\\intro.js\\introjs.min.css",
+  "assets\\stylesheets\\vendor\\font-awesome\\font-awesome.css"
+]

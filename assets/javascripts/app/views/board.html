@@ -1,0 +1,61 @@
+<div style="height: 100%"  class="container">
+
+    <div class="row">
+        <div class="col-lg-10" >
+            <h2>Spielverlauf</h2>
+            <div data-bind="compose: {
+                            model: 'viewmodels/chart',
+                            activationData: [receiver.players, timeline]
+                            }">
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h2>Spieldaten</h2>
+
+            <p></p>
+            <h4><i class="fa fa-clock-o fa-2"></i> Zeit:
+                <!-- ko text:moment(receiver.currentTimestamp()).format('mm:ss') -->  <!-- /ko --> min.</h4>
+            <h4><i class="fa fa-crop fa-2"></i> Anzahl Spieler: <!-- ko text: receiver.playerCount -->  <!-- /ko -->
+            </h4>
+            <div class="recorderBar" style="float:left;align:center ">
+                <a href="#"  data-bind="click:playRecord,css:{disable: state() =='PLAY'} "><i class="fa fa-play fa-2x"></i></a>
+                <a href="#"  data-bind="click:toggleRecord"><i data-bind="css:{blink: state()==''} " class="fa fa-circle fa-2x"></i></a>
+                <a href="#"  data-bind="click:pauseRecord, css:{disable: !(state() =='PLAY')}"><i class="fa fa-pause fa-2x"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="pagination" data-bind="foreach: timeline">
+                <li><a href="#" data-bind="click: $root.selectedTime($data),
+                                        css: {active: $data == $root.selectedTime()},
+                                        text:moment($data).format('mm:ss')"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="height: 100%"  class="row">
+        <div style="height: 100%" class="col-lg-10"  >
+            <h2>Karte</h2>
+
+            <div style="height: 50%;"
+                 data-bind="compose: {
+                            model: 'viewmodels/map',
+                            activationData: [receiver.players, selectedTime]
+                            }">
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h2>Spieler</h2>
+            <div data-bind="foreach: receiver.players">
+                <div class="input-group">
+                    <span data-bind="attr: {style: 'background-color: '+color()+';'}" class="input-group-addon"></span>
+                    <input data-bind="value:name" type="text" class="form-control" placeholder="Username">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
